@@ -1,0 +1,50 @@
+.cajoneraboton{
+    text-align: center;
+}
+#agregar-plabre-input{
+
+    margin-top: 100px;
+    width: 329px;
+    height: 70px;
+    border-radius:25px ;
+    font-size: 25px;
+    text-align: center;
+    border:2px solid black;
+}
+.boton-enviar{
+    margin: 30px;
+    width: 180px;
+    height: 50px;
+    border: 2px solid rgb(61, 136, 235);
+    border-radius: 10px;
+    background-color: transparent;
+    color:blue;
+    cursor: pointer;
+    position: relative;
+}
+
+.boton-enviar:hover{
+    /*background-color:rgb(241, 8, 8);*/
+    color:rgb(61, 136, 235);
+    transition: 1s ease;
+    }
+
+    .boton-enviar::before{
+        content:'';
+        position: absolute;
+        left: 0px;
+        top:50px;
+        background: transparent;
+        height: 50%;
+        width:100%;
+        transform: perspective(1em)
+        rotateX(40deg) scale(1, 0.35);
+        filter:blur(8px);
+        transition: 1s ease;
+    }
+
+    .boton-enviar:hover::before{
+        background: blue;
+        top: 70px;
+    } 
+    

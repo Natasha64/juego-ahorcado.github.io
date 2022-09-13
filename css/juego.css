@@ -1,0 +1,95 @@
+.material-symbols-outlined {
+    
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+ 
+  
+  #spans{
+      font-size: 100px;
+  }
+  .nuevojuego,.desistir{
+    margin: 60px;
+    width:120px;
+    height: 60px;
+    border: 2px solid rgb(61, 136, 235);
+    border-radius: 10px;
+    background-color: transparent;
+    color:blue;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nuevojuego:hover, .desistir:hover{
+   /* background-color:rgb(241, 8, 8);*/
+    color:rgb(61, 136, 235);
+    transition: 1s ease;
+  }
+  .nuevojuego::before,.desistir::before{
+    content:'';
+    position: absolute;
+    left: 0px;
+    top:50px;
+    background: transparent;
+    height: 50%;
+    width:100%;
+    transform: perspective(1em)
+    rotateX(40deg) scale(1, 0.35);
+    filter: blur(8px);
+    transition: 1s ease;
+  }
+ 
+
+.nuevojuego:hover::before,.desistir:hover::before {
+    background: blue;
+    top:70px;
+} 
+  
+  .letras-contenedor{
+      display: block;
+      margin-top: 27,5px;
+      margin-bottom: 22px;
+      font-family: 'Segoe UI';
+      font-size: 25px;
+  
+      background-color: orangered;
+  }
+  .pantalla{
+      display: inline-block;
+  }
+  
+  body{
+      text-align: center;
+  }
+  
+  .teclado{
+      border: none;
+  }
+  .lista{
+      display: block;
+  }
+  .elemento-lista{
+      list-style: none;
+      display: inline-block;
+      border-bottom: 1px solid black;
+      width: 25px;
+      margin-right: 2px;
+      height: 35px;
+  
+  }
+  .elmento-lista span{
+      color: white ;
+  }
+  #errores{
+      margin-bottom: 10px;
+      font-size:18px ;
+  }
+  
+  
+  .hidden{
+      display: none;
+  }

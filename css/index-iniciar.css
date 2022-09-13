@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family:'segoe UI';
+    background-color: #d8dbf0;
+}
+
+.material-symbols-outlined {
+    background: transparent;
+    color: rgb(3, 3, 3);
+    
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.devolver{
+    margin-left: 1246px;
+    margin-top: 20px;
+    width: 20px;
+    height: 40px;
+    border: none;
+   
+}
+.devolver2{
+    margin-left: 1246px;
+    margin-top: 20px;
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    background-color: #E9ECFF;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.log{
+    display: inline-flex;
+}
+#logo{
+    margin: 20px 20px;
+}
+main{
+    text-align: center;
+}
+.container-principal{
+    display: inline-block;
+    margin-top: 150px;
+}
+.boton1,.boton2{
+    
+    margin: 60px;
+    width:120px;
+    height: 60px;
+    border: 2px solid rgb(61, 136, 235);
+    border-radius: 10px;
+    background-color: transparent;
+    color:rgb(61, 136, 235);
+    cursor: pointer;
+    position: relative;
+}
+/*.boton1,.boton2{
+    margin-top: 31px;
+    font-style: 20px;
+    font-family:'segoe UI';
+    display: block;
+    width:320px ;
+    height: 76px;
+    text-align: center;
+    color: #090441;
+    background-color: #ffffff;
+    border-radius:95px ;
+    border: 1px solid #090441;
+}*/
+
+.boton1:hover,.boton2:hover{
+    /*background-color:rgb(240, 230, 230);*/
+    color:blue;
+    transition: 1s ease;
+    }
+
+    .boton1::before,.boton2::before{
+        content:'';
+        position: absolute;
+        left: 0px;
+        top:50px;
+        background: transparent;
+        height: 50%;
+        width:100%;
+        transform: perspective(1em)
+        rotateX(40deg) scale(1, 0.35);
+        filter: blur(8px);
+        transition: 1s ease;
+    }
+
+
+
+    .boton1:hover::before,.boton2:hover::before{
+        background: blue;
+        top:70px;
+
+    }
+
+
+    .boton3,.informacion-boton{  
+        margin-left: 10px;
+        width:120px;
+        height: 60px;
+        border: 2px solid rgb(61, 136, 235);
+        border-radius: 10px;
+        /*background-color: transparent;*/
+        color:rgb(61, 136, 235);
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .boton3:hover,.informacion-boton:hover{
+        /*background-color:rgb(241, 8, 8);*/
+        color:blue;
+        transition: 1s ease;
+        }
+    
+    
+    .boton3::before,.informacion-boton::before{
+            
+            content:'';
+            position: absolute;
+            left: 0px;
+            top:50px;
+            background: transparent;
+            height: 50%;
+            width:100%;
+            transform: perspective(1em)
+            rotateX(40deg) scale(1, 0.35);
+            filter: blur(8px);
+            transition: 1s ease;
+        }
+    
+    
+    .boton3:hover::before,.informacion-boton:hover::before{
+        background:blue;
+        top:70px;
+    }
+
+
+.info p{
+    color:blue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2px;
+
+}
+.info img {
+    padding-top: 40px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+.ocultar{
+    display: none;
+}
